@@ -1,57 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Personality Quiz</title>
-    <link rel="icon" type="image/x-icon" href="/img/ideas.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href ="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>What Type of Basketball Player Are You?</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1 class="text-center mt-4">YOUR QUIZ TITLE HERE</h1>
-    
-    <!-- Start quiz element -->
-    <div class="container d-flex justify-content-center" id="question-1">
-      <div class="card my-4 p-4 question-block" style="width: 75%;">
-        <h4 class="mb-3">YOUR QUIZ QUESTION HERE</h4>
+  <main class="container py-5">
+    <header class="text-center mb-5">
+      <p class="eyebrow">BASKETBALL PERSONALITY QUIZ</p>
+      <h1>What Type of Basketball Player Are You?</h1>
+      <p class="lead">Answer these five questions to find out what role fits your game.</p>
+    </header>
+
+    <form id="quiz-form">
+      <section class="card question-block mb-4 p-4" data-question="0">
+        <h2 class="h4 mb-3">1. What do you enjoy most during a game?</h2>
         <div class="row g-2">
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">ANSWER CHOICE A</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">ANSWER CHOICE B</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">ANSWER CHOICE C</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">ANSWER CHOICE D</button>
-          </div>
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="leader">Getting my teammates fired up</button></div>
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="shooter">Making shots from anywhere</button></div>
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="playmaker">Setting up my teammates</button></div>
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="worker">Doing the little things to help us win</button></div>
         </div>
+      </section>
+
+      <section class="card question-block mb-4 p-4" data-question="1">
+        <h2 class="h4 mb-3">2. What would your teammates say is your biggest strength?</h2>
+        <div class="row g-2">
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="leader">I bring energy and confidence</button></div>
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="shooter">I can score the ball</button></div>
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="playmaker">I make smart passes</button></div>
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="worker">I work hard on every play</button></div>
+        </div>
+      </section>
+
+      <section class="card question-block mb-4 p-4" data-question="2">
+        <h2 class="h4 mb-3">3. Your team is down late in the game. What do you do?</h2>
+        <div class="row g-2">
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="leader">Encourage everyone to stay locked in</button></div>
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="shooter">Look for a chance to hit a big shot</button></div>
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="playmaker">Create a good shot for someone</button></div>
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="worker">Focus on defense and getting a stop</button></div>
+        </div>
+      </section>
+
+      <section class="card question-block mb-4 p-4" data-question="3">
+        <h2 class="h4 mb-3">4. What do you focus on most in practice?</h2>
+        <div class="row g-2">
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="leader">Communicating and leading</button></div>
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="shooter">Improving my shooting</button></div>
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="playmaker">Ball handling and passing</button></div>
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="worker">Defense, effort, and conditioning</button></div>
+        </div>
+      </section>
+
+      <section class="card question-block mb-4 p-4" data-question="4">
+        <h2 class="h4 mb-3">5. Which basketball moment feels the best?</h2>
+        <div class="row g-2">
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="leader">Seeing my whole team play with confidence</button></div>
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="shooter">Knocking down a clutch shot</button></div>
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="playmaker">Making the perfect pass</button></div>
+          <div class="col-md-6"><button type="button" class="btn answer-btn" data-type="worker">Making a hustle play that changes the game</button></div>
+        </div>
+      </section>
+
+      <div class="text-center">
+        <p id="quiz-message" class="mb-3" aria-live="polite">Choose one answer for each question.</p>
+        <button id="show-results" type="button" class="btn btn-primary btn-lg">Show My Result</button>
       </div>
-    </div>
+    </form>
 
-    
-    
-    <!-- End quiz element -->
-
-    <!-- Add more quiz elements here -->
-
-
-
-    <div class="container d-flex justify-content-center">
-      <button id="show-result" class="btn btn-success my-4">Show Results</button>
-    </div>    
-    <!-- Output the result here -->
-    <div class="container d-flex justify-content-center">
-      <div id="result-container" class="card p-4 mb-4" style="width: 75%; display: none;">
-        <h3>Your Result:</h3>
-        <p id="result-text"></p>
-      </div>
-    </div>
-    
-    <!-- Connect to your script file here -->
-     <script src = "./js/script.js"></script>
+    <section id="result-container" class="card result-card p-4 mt-5" hidden aria-live="polite">
+      <h2 class="h3">Your basketball personality is...</h2>
+      <p id="result-text" class="mb-0"></p>
+      <button id="try-again" type="button" class="btn btn-outline-light mt-4">Take the Quiz Again</button>
+    </section>
+  </main>
+  <script src="./js/script.js"></script>
 </body>
 </html>
